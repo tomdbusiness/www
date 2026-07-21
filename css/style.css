@@ -1,9 +1,50 @@
 :root {
-    --color-primary: #807967; /* This is a variable */
+    --color-primary: #807967;
+    /* This is a variable */
 }
 
 * {
     padding: 0;
     margin: 0;
-    color: var(--color-primary); /* This uses the variable */
+    color: var(--color-primary);
+    /* This uses the variable */
+}
+
+.wrap {
+    /* div class="wrap" which is around all content on the whole page */
+
+    width: 100%;
+    /* span whole width of the page */
+
+    /*  height:100vh; if you wanted it to be the full screen height was well, use 100vh. (not useful here but good to know)*/
+
+
+    display: flex;
+    /* enables flexbox, which lets you... */
+
+    justify-content: center;
+    /* ...make everything inside the <div class="wrap"> go to the center of it */
+
+    /* align-items: center; if you did the height thing from before, this will center it on the page vertically */
+}
+
+.content {
+    /* <div class="content"> which is directly inside the <div class="wrap"> */
+
+    width: 640px;
+    /* 640px is a pretty good width no requirement to use it obviously */
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* with this, you can put anything in a <div class="center"></div> and it'll be centered in whatever its inside */
+    /* see the index.html, i did it with the image */
+}
+
+marquee {
+    border-top: solid 1px var(--color-primary);
+    border-bottom: solid 1px var(--color-primary);
+    padding: 6px 0;
 }
