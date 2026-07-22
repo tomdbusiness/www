@@ -2,6 +2,8 @@
 
 :root {
     --color-primary: #807967;
+    --color-secondary: #5C5847;
+    --color-tertiary: #EFEDEA;
     /* This is a variable */
 }
 
@@ -16,6 +18,32 @@ body {
     color: var(--color-primary);
     /* moved color primary to body rather than wildcard (*) */
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: var(--color-tertiary);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: var(--color-secondary);
+}
+
+
 
 .wrap {
     /* div class="wrap" which is around all content on the whole page */
