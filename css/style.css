@@ -44,6 +44,11 @@ ul li a:hover {
   background-color: var(--color-secondary);
 }
 
+a {
+    color: #6276A3;
+    text-decoration: none;
+}
+
 
 
 .wrap {
